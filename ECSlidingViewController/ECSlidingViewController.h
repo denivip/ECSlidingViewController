@@ -243,6 +243,10 @@
  */
 - (void)resetTopViewAnimated:(BOOL)animated onComplete:(void(^)())complete;
 
+/**
+ Helper for custom transition animations
+ */
+- (CGRect)topViewCalculatedFrameForPosition:(ECSlidingViewControllerTopViewPosition)position;
 
 ///--------------------------------------
 /// @name User Defined Runtime Attributes

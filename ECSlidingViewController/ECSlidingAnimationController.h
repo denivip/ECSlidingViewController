@@ -35,5 +35,7 @@
  The default duration of the view transition.
  */
 @property (nonatomic, assign) NSTimeInterval defaultTransitionDuration;
+@property (nonatomic, copy) void (^coordinatorAnimations)(id<UIViewControllerTransitionCoordinatorContext>context);
+@property (nonatomic, copy) void (^coordinatorCompletion)(id<UIViewControllerTransitionCoordinatorContext>context);
 
 @end

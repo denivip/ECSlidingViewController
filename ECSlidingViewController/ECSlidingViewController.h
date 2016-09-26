@@ -247,6 +247,7 @@
  Helper for custom transition animations
  */
 - (CGRect)topViewCalculatedFrameForPosition:(ECSlidingViewControllerTopViewPosition)position;
+- (ECSlidingViewControllerOperation)getCurrentAnimationOperation;
 
 ///--------------------------------------
 /// @name User Defined Runtime Attributes

@@ -620,11 +620,6 @@
     }
     
     [self beginAppearanceTransitionForOperation:operation];
-    if([self.currentAnimationController isKindOfClass:[ECSlidingAnimationController class]]){
-        ECSlidingAnimationController* cac = (ECSlidingAnimationController*)self.currentAnimationController;
-        [cac setValue:self.coordinatorAnimations forKey:@"coordinatorAnimations"];
-        [cac setValue:self.coordinatorCompletion forKey:@"coordinatorCompletion"];
-    }
     [self.defaultAnimationController setValue:self.coordinatorAnimations forKey:@"coordinatorAnimations"];
     [self.defaultAnimationController setValue:self.coordinatorCompletion forKey:@"coordinatorCompletion"];
     [self.defaultInteractiveTransition setValue:self.coordinatorInteractionEnded forKey:@"coordinatorInteractionEnded"];
